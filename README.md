@@ -1,9 +1,9 @@
-#Kaggle-Competition-DigitRecognizer
+# Kaggle-Competition-DigitRecognizer
 
-##Overview
+## Overview
 This is my first kaggle competition project, also my first `Python` program. In this project, the goal is to correctly identify the handwritten single digit by training a dataset of tens of thousands of handwritten images. More information about the competition can be found [here](https://www.kaggle.com/c/digit-recognizer#description).
 
-##Details
+## Details
 This program utilizes a Neural Network with one hidden layer to achieve the goal. Rotated images are used to extend the training dataset.
 
 Training dataset and test dataset can be downloaded [here](https://www.kaggle.com/c/digit-recognizer/data)
@@ -14,7 +14,7 @@ Four versions (with different learning rates, hidden unit numbers and epoch numb
 
 ![submission][base64sub]
 
-##Dependencies
+## Dependencies
 * [NumPy](http://www.numpy.org)
 * [SciPy](https://www.scipy.org)
 * [Pandas](http://pandas.pydata.org)
