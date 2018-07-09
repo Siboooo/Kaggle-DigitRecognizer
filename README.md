@@ -12,7 +12,7 @@ A small training set and a small test set is provided in this project for testin
 
 Four versions (with different learning rates, hidden unit numbers and epoch numbers) were submitted.
 
-![submission](https://raw.githubusercontent.com/Siboooo/imgForMD/master/sub.png)
+![submission](https://raw.githubusercontent.com/Siboooo/imgForMD/master/DigitRecognizer/sub.png)
 
 ## Dependencies
 * [NumPy](http://www.numpy.org)
