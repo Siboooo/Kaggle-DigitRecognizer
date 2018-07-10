@@ -10,7 +10,7 @@ Training dataset and test dataset can be downloaded [here](https://www.kaggle.co
 
 A small training set and a small test set are provided in this project for testing. 
 
-Four versions (with different learning rates, hidden unit numbers and epoch numbers) were submitted.
+Four versions (with different learning rates, hidden unit numbers and epoch numbers) were submitted (Up to 97.5%).
 
 ![submission](https://raw.githubusercontent.com/Siboooo/imgForMD/master/DigitRecognizer/sub.png) 
 
