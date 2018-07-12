@@ -62,6 +62,7 @@ n = NeuralNetwork(inputNodes, hiddenNodes, outputNodes, learningRate)
 trainingDataFile = open("train.csv", "r")
 trainingData = trainingDataFile.readlines()
 trainingDataFile.close()
+
 #remove the label
 trainingData = trainingData[1:]
 
@@ -76,7 +77,7 @@ for e in range(10):
         targets[int(values[0])] = 0.99
         n.train(input, targets)
 
-        #extend the training set(optional)
+        #Data augmentation
         #rotate 10 degree
         inputP = scipy.ndimage.interpolation.rotate(input.reshape(28, 28), 10, reshape=False, cval=0.01)
         n.train(inputP.reshape(784), targets)
@@ -93,18 +94,6 @@ testData = testDataFile.readlines()
 testDataFile.close()
 #remove the label
 testData = testData[1:]
-
-'''
-#output the answer of the small test set
-for record in testData:
-    values = record.split(",")
-    input = (numpy.asfarray(values[1:])/255.0*0.99) + 0.01
-    output = n.query(input)
-    prediction = numpy.argmax(output)
-    answer = values[1:]
-
-    print("Prediction: ", prediction, " Answer: ", answer)
-'''
 
 #create data frame for the final result
 result = pandas.DataFrame(columns=["Imageid", "Label"])
