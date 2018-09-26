@@ -1,4 +1,4 @@
-# Kaggle-Competition-DigitRecognizer
+# Kaggle-DigitRecognizer
 
 ## Overview
 This is my first kaggle competition project, also my first `Python` program. In this project, the goal is to correctly identify the handwritten single digit by training a dataset of tens of thousands of handwritten images. More information about the competition can be found [here](https://www.kaggle.com/c/digit-recognizer#description).
